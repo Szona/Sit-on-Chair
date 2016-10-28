@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+div {
+    display: block;
+    float: left;
+}
+
+div::after {
+    content: " ";
+    clear: both;
+}
+
+span {
+    color: #24ba9f;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+nav {
+    background: black;
+    float: right;
+}
+
+nav::after {
+    content: " ";
+    clear: both;
+}
+
+ul {
+    background: black;
+}
+
+li {
+    width: 100px;
+    outline: 1px solid red;
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 5px;
+    position: relative;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+section {
+    width: 100%;
+}
