@@ -1,4 +1,49 @@
-section-2 {
+$main-color: #24ba9f;
+
+h2 {
+    border-bottom: 8px solid $main-color;
+    width: 300px;
+    margin: 30px;
+    text-transform: uppercase;
+        
+}
+
+.section-2 {
+    background-color: f1f1f1;
+
+}
+.container {
+    border: 2px solid #dbdbdb;
+    width: 230px;
+    height: 450px;  
+    z-index: 1;
+    position: relative;
+    background-color: #f9f9f9;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+}
+.circle {
+    border: 2px solid #dbdbdb;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -5%;
+    right: 45%;
+      
+}
+.circle::before {
+    content: "";
+    border: 2px solid #dbdbdb;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: #dbdbdb;
+    position: absolute;
 }
