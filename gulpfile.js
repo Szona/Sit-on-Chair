@@ -1,6 +1,5 @@
 var gulp = require("gulp");
 var sass = require('gulp-sass');
-//var jshint = require('gulp-jshint'); 
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 var minify = require('gulp-minify');
@@ -22,7 +21,7 @@ gulp.task('sass', function() {
 
 });
 
-gulp.task('watch', ['sass'], function(){ //zadanie [sass] wykonanie przed watch, po wywołaniu watch
+gulp.task('watch', ['sass'], function(){
 
     gulp.watch('scss/**/*.scss', ['sass']);
     
