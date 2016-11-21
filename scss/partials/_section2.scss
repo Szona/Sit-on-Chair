@@ -20,7 +20,7 @@ h2 {
     
 }
 .container {
-    border: 2px solid #dbdbdb;
+    border: 1px solid #dbdbdb;
     width: 300px;
     height: 450px;  
     z-index: 1;
@@ -32,24 +32,67 @@ h2 {
     
 }
 .circle {
-    border: 2px solid #dbdbdb;
+    border: 1px solid #dbdbdb;
     border-radius: 100%;
     width: 50px;
     height: 50px;
+    background-color: #ffffff;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     top: -5%;
-    right: 45%;
+    right: 40%;
+    z-index: 1;
       
 }
 .circle::before {
     content: "";
-    border: 2px solid #dbdbdb;
+    border: 1px solid #dbdbdb;
     border-radius: 100%;
     width: 20px;
     height: 20px;
-    background-color: #dbdbdb;
+    background-color: #c2c2c2;
     position: absolute;
+    z-index: 1;
+}
+.title {
+    margin: 40px;
+    color: $main-color;
+    text-align: center;
+    text-transform: uppercase;
+}
+.price {
+    border: 1px solid #c2c2c2;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 30px;
+    
+}
+.odd {
+    
+    background-color: #e4e4e4;
+    color: #8e8e8e;
+    text-align: center;
+    padding: 10px;
+}
+.even {
+    background-color: #f1f1f1;
+    color: #959595;
+    text-align: center;
+    padding: 10px;
+}
+.btn-cennik {
+    background-color: $main-color;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    
+    border-radius: 8px;
 }
