@@ -1,4 +1,4 @@
-$main-color: #24ba9f;
+@import'./modules/variables';
 
 .section-1 {
     
@@ -13,7 +13,7 @@ $main-color: #24ba9f;
         border: 1px solid #dbdbdb;
         h3 {
             width: 150px;
-            border-bottom: 4px solid $main-color;
+            //border-bottom: 4px solid;
             margin-left: 25px;
             margin-top: 30px;
         }
@@ -22,11 +22,24 @@ $main-color: #24ba9f;
         }
     } 
     .img1 {
+        position: relative;
         border: 1px solid #dbdbdb;
+        
     }
+   
 
     .img2 {
         border: 1px solid #dbdbdb;
     }
-   
+      
+}
+.image1 {
+    //border-bottom: 4px solid $mine-color;
+    width: 335px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 749px;
+    left: 17px;    
+
 }

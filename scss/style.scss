@@ -14,8 +14,9 @@
     
 }
 
-@import 'fontface';
-@include fontFace('fonts','font/myfont');
+body {
+    font-family: 'ralewaylight' ,Arial ,sans-serif;
+}
 
 
 .center {

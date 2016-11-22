@@ -18,21 +18,21 @@ span {
 }
 
 .black-chair {
-    width: 480px;
+    width: 500px;
     height: 400px;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 100px;
     margin-right: -237px;
     margin-bottom: 50px;
     
 }
 .center-header-content{
-    width: 470px;
+    width: 480px;
     height: 250px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 80px;
     justify-content: center;
     h1 {
         font-size: 36px;
@@ -63,18 +63,12 @@ span {
 }
 
 
-.center-arrows {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .arrow {
     font-size: 60px;
     font-weight: lighter;
     position: absolute;
     color: $main-color;
-    top: 230px;
+    top: 280px;
     z-index: 10px;
     text-decoration: none;
 }
