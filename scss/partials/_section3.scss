@@ -1,38 +1,59 @@
 section-3 {
-    display: flex;
-    flex-wrap: wrap;
+   margin: 0 auto;
+    
 }
 
-fieldset {
-    border: none;
-    display: flex;
-    form {
-        margin: 20px;
-        .name {
-            border: 1px solid;
-            border-color: $main-color;
-            width: 630px;
-            height: 50px;
-            margin: 15px;
+
+    
+    
+form {
+    width: 100%;
+    position: relative;
+    
+    .name {
+        border: 1px solid;
+        border-color: $main-color;
+        width: 50%;
+        height: 56px;
+        margin: 10px;
         }
-        .email {
-            border: 1px solid;
-            border-color: $main-color;
-            width: 630px;
-            height: 50px;
-            margin: 15px;
+    .email {
+        border: 1px solid;
+        border-color: $main-color;
+        width: 50%;
+        height: 60px;
+        margin: 10px;
         }
-        .message {
-            border-color: $main-color;
-            width: 630px;
-            height: 150px;
-            margin: 15px;
+    .message {
+        border-color: $main-color;
+        width: 50%;
+        height: 160px;
+        margin: 10px;
+            
         }
     }
-}
+
 
 .right-side {
     
+   float: right;
+   position: absolute;
+   bottom: 2%;
+   left: 63%;
+    
+}
+.red-chair {
+    margin-bottom: 10px;
+}
+.submit-contact {
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    background-color: $main-color;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    margin: 15px 0;
 }
 
 @mixin createCheckbox() {
@@ -58,11 +79,11 @@ fieldset {
             border: 1px solid green;
             content: "";
             display: block;
-            left: 0;
+            left: -5px;
             height: 48px;
             position: absolute;
             width: 48px;
-            top: 0;
+            top: 9px;
         }
         &::after {
             background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A') no-repeat center;
