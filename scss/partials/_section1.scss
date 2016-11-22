@@ -1,45 +1,81 @@
-@import'./modules/variables';
+$main-color: #24ba9f;
 
 .section-1 {
-    
     display: flex;
     justify-content: space-around;
     padding-top: 25px;
     padding-bottom: 60px;
-    
     .box {
         width: 335px;
         height: 250px;
         border: 1px solid #dbdbdb;
         h3 {
             width: 150px;
-            //border-bottom: 4px solid;
+            border-bottom: 4px solid $main-color; 
             margin-left: 25px;
             margin-top: 30px;
         }
         p {
-           margin: 20px; 
+            margin: 20px;
         }
-    } 
-    .img1 {
-        position: relative;
-        border: 1px solid #dbdbdb;
-        
     }
-   
-
-    .img2 {
-        border: 1px solid #dbdbdb;
-    }
-      
+    
 }
-.image1 {
-    //border-bottom: 4px solid $mine-color;
-    width: 335px;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    top: 749px;
-    left: 17px;    
 
+.img1 {
+    width: 335px;
+    height: 230px;
+    background-image: url('../../images/box1_img.jpg');
+    border: 1px solid #dbdbdb;
+    position: relative;
+}
+
+.img2 {
+    width: 335px;
+    height: 230px;
+    background-image: url('../../images/box2_img.jpg');
+    border: 1px solid #dbdbdb;
+    position: relative;
+}
+
+.img1::before {
+    content: "";
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    bottom: 10%;
+    
+}
+
+
+.img1::after {
+    content: "Chair CLAIR";
+    width: 50%;
+    border-bottom: 4px solid $main-color;
+    position: absolute;
+    bottom: 23px;
+    margin-left: 10px;
+}
+
+.img2::before {
+    content: "";
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    bottom: 10%;
+    
+}
+
+
+.img2::after {
+    content: "Chair MARGARITA";
+    width: 50%;
+    border-bottom: 4px solid $main-color;
+    position: absolute;
+    bottom: 23px;
+    margin-left: 10px;
 }
