@@ -1,36 +1,31 @@
 $main-color: #24ba9f;
-
 h2 {
     border-bottom: 8px solid $main-color;
     width: 300px;
     margin: 30px;
     text-transform: uppercase;
-        
 }
 
 .section-2 {
     background-color: #f1f1f1;
-    
-
 }
+
 .center-section2 {
     width: 1000px;
     display: flex;
-    margin:  0 auto;
-    
+    margin: 0 auto;
 }
+
 .container {
     border: 1px solid #dbdbdb;
-    width: 300px;
-    height: 450px;  
+    width: 450px;
+    height: 450px;
     z-index: 1;
     position: relative;
     background-color: #f9f9f9;
     margin: 40px;
-    
-    
-    
 }
+
 .circle {
     border: 1px solid #dbdbdb;
     border-radius: 100%;
@@ -44,8 +39,8 @@ h2 {
     top: -5%;
     right: 40%;
     z-index: 1;
-      
 }
+
 .circle::before {
     content: "";
     border: 1px solid #dbdbdb;
@@ -56,12 +51,14 @@ h2 {
     position: absolute;
     z-index: 1;
 }
+
 .title {
     margin: 40px;
     color: $main-color;
     text-align: center;
     text-transform: uppercase;
 }
+
 .price {
     border: 1px solid #c2c2c2;
     width: 100px;
@@ -75,27 +72,90 @@ h2 {
     margin-bottom: 30px;
     color: #c1c1c1;
     text-align: center;
-    }
+}
 
 .odd {
-    
     background-color: #e4e4e4;
     color: #8e8e8e;
     text-align: center;
     padding: 10px;
 }
+
 .even {
     background-color: #f1f1f1;
     color: #959595;
     text-align: center;
     padding: 10px;
 }
+
 .btn-cennik {
     background-color: $main-color;
     color: #fff;
     border: none;
     padding: 10px 30px;
-    
     border-radius: 8px;
 }
 
+.btn-cennik-middle {
+    background-color: #fff;
+    color: $main-color;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+.container-middle {
+    border: 1px solid $main-color;
+    width: 450px;
+    height: 450px;
+    z-index: 1;
+    position: relative;
+    background-color: $main-color;
+    margin: 40px;
+}
+
+.circle-middle {
+    border: 1px solid $main-color;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: $main-color;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -5%;
+    right: 40%;
+    z-index: 1;
+}
+
+.circle-middle::before {
+    content: "";
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+}
+.price-middle {
+    border: 1px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #c1c1c1;
+    text-align: center;
+}
+.title-middle {
+    margin: 40px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
