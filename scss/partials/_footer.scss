@@ -1,8 +1,15 @@
 footer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+
+.footer {
+    
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
-    padding: 30px;
+    
 }
 
 .copyright {
@@ -18,5 +25,10 @@ footer {
     font-weight: bold;
 }
 .social-media {
+    margin-left: 25%;
+    display: inline-block;
     
+    a {
+        text-decoration: none;
+    }
 }

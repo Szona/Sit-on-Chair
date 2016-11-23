@@ -8,17 +8,19 @@ h2 {
 
 .section-2 {
     background-color: #f1f1f1;
+    padding-top: 15px;
 }
 
 .center-section2 {
-    width: 1000px;
+    width: 93%;
     display: flex;
     margin: 0 auto;
 }
 
 .container {
     border: 1px solid #dbdbdb;
-    width: 450px;
+
+    width: 300px;
     height: 450px;
     z-index: 1;
     position: relative;
@@ -94,6 +96,9 @@ h2 {
     border: none;
     padding: 10px 30px;
     border-radius: 8px;
+    position: absolute;
+    right: 33%;
+    bottom: 5%;
 }
 
 .btn-cennik-middle {
@@ -102,11 +107,14 @@ h2 {
     border: none;
     padding: 10px 30px;
     border-radius: 8px;
+    position: absolute;
+    right: 33%;
+    bottom: 5%;
 }
 
 .container-middle {
     border: 1px solid $main-color;
-    width: 450px;
+    width: 300px;
     height: 450px;
     z-index: 1;
     position: relative;
@@ -138,6 +146,7 @@ h2 {
     position: absolute;
     z-index: 1;
 }
+
 .price-middle {
     border: 1px solid #fff;
     width: 100px;
@@ -153,6 +162,7 @@ h2 {
     color: #c1c1c1;
     text-align: center;
 }
+
 .title-middle {
     margin: 40px;
     color: #fff;

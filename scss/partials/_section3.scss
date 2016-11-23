@@ -1,7 +1,7 @@
-section-3 {
-   margin: 0 auto;
+
+   
     
-}
+
 
 
     
@@ -76,7 +76,7 @@ form {
         cursor: pointer;
         &::before,
         &::after {
-            border: 1px solid green;
+            border: 1px solid $main-color;
             content: "";
             display: block;
             left: -5px;
