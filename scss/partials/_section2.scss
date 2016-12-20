@@ -2,19 +2,25 @@ $main-color: #24ba9f;
 h2 {
     border-bottom: 8px solid $main-color;
     width: 300px;
-    margin: 30px;
+    margin: 20px;
     text-transform: uppercase;
+    margin-bottom: 50px;
+    margin-left: 3.5%;
+
 }
 
 .section-2 {
+    width: 100%;
     background-color: #f1f1f1;
-    padding-top: 15px;
+    padding: 30px 0;
 }
 
 .center-section2 {
+    
     width: 93%;
-    display: flex;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .container {
@@ -24,7 +30,7 @@ h2 {
     z-index: 1;
     position: relative;
     background-color: #f9f9f9;
-    margin: 40px;
+//    margin: 40px;
 }
 
 .circle {
@@ -38,7 +44,7 @@ h2 {
     justify-content: center;
     align-items: center;
     top: -5%;
-    right: 40%;
+    right: 42%;
     z-index: 1;
 }
 
@@ -58,6 +64,8 @@ h2 {
     color: $main-color;
     text-align: center;
     text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .price {
@@ -66,20 +74,17 @@ h2 {
     height: 100px;
     border-radius: 100%;
     font-size: 40px;
-    text-align: center;
+//    text-align: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 30px;
     color: #c1c1c1;
     position: relative;
-    
-    
-    
-    
 }
+
 .index {
     font-size: 12px;
     position: absolute;
@@ -136,7 +141,7 @@ h2 {
     z-index: 1;
     position: relative;
     background-color: $main-color;
-    margin: 40px;
+//    margin: 40px;
 }
 
 .circle-middle {
@@ -150,7 +155,7 @@ h2 {
     justify-content: center;
     align-items: center;
     top: -5%;
-    right: 40%;
+    right: 42%;
     z-index: 1;
 }
 
@@ -187,4 +192,6 @@ h2 {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
 }
