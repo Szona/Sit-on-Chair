@@ -3,30 +3,37 @@ footer {
     margin-bottom: 20px;
 }
 
-
 .footer {
-    
+    width: 93%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
     
 }
 
 .copyright {
     color: #b4b4b4;
     margin: 0;
+    line-height: 2;
 }
+
 .logo-footer {
     color: #b4b4b4;
     text-decoration: none;
+    font-size: 20px;
+    display: block;
+    line-height: 2;
 }
+
 .logo-footer-span {
     color: darken(#b4b4b4, 25%);
     font-weight: bold;
 }
+
 .social-media {
-    margin-left: 25%;
-    display: inline-block;
+    margin-left: 30%;
+    display: flex;
+    
     
     a {
         text-decoration: none;

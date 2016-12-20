@@ -8,18 +8,32 @@
         text-transform: uppercase;
         margin-bottom: 50px;
         margin-left: 1%;
+        font-weight: 400;
     }
 }
 
 form {
     position: relative;
-    
     .name {
         border: 1px solid;
         border-color: $main-color;
         width: 60%;
         height: 56px;
         margin: 10px;
+        font-family: 'Raleway', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        padding: 10px;
+        color: #b4b4b4;
+    }
+    .name::-webkit-input-placeholder {
+        color: #c9c9c9;
+    }
+    .name:focus {
+        font-family: 'Raleway', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        padding: 10px;
     }
     .email {
         border: 1px solid;
@@ -27,12 +41,41 @@ form {
         width: 60%;
         height: 60px;
         margin: 10px;
+        font-family: 'Raleway', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        padding: 10px;
+        color: #b4b4b4;
+    }
+    .email:focus {
+        font-family: 'Raleway', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        padding: 10px;
+    }
+    .email::-webkit-input-placeholder {
+        color: #c9c9c9;
     }
     .message {
         border-color: $main-color;
         width: 60%;
         height: 180px;
         margin: 10px;
+        font-family: 'Raleway', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+        padding: 10px;
+        color: #c9c9c9;
+    }
+    .message:focus {
+        font-family: 'Raleway', Arial, sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        padding: 10px;
+        color: #c9c9c9;
+    }
+    .message::-webkit-input-placeholder {
+        color: #c9c9c9;
     }
 }
 
@@ -48,7 +91,7 @@ form {
 }
 
 .submit-contact {
-    width: 300px;
+    width: 320px;
     height: 60px;
     color: #fff;
     letter-spacing: 2px;
