@@ -1,23 +1,19 @@
 @import'./partials/navigation';
-@import'./modules/fonts';
 @import'./partials/header';
 @import'partials./section1';
 @import'partials./section2';
 @import'partials./section3';
 @import'partials./footer';
-
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body {
-    font-family: 'ralewaylight' ,Arial ,sans-serif;
+    font-family: 'Raleway', Arial, sans-serif;
 }
-
 
 .center {
     margin: 0 auto;
@@ -29,4 +25,3 @@ body {
     content: "";
     display: block;
 }
-

@@ -19,7 +19,6 @@ h2 {
 
 .container {
     border: 1px solid #dbdbdb;
-
     width: 300px;
     height: 450px;
     z-index: 1;
@@ -66,14 +65,32 @@ h2 {
     width: 100px;
     height: 100px;
     border-radius: 100%;
+    font-size: 40px;
     text-align: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
     margin: auto;
     margin-bottom: 30px;
     color: #c1c1c1;
-    text-align: center;
+    position: relative;
+    
+    
+    
+    
+}
+.index {
+    font-size: 12px;
+    position: absolute;
+    top: 67%;
+    left: 23%;
+}
+
+.change {
+    position: absolute;
+    top: 27%;
+    left: 72%;
 }
 
 .odd {
@@ -157,10 +174,12 @@ h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
     margin: auto;
     margin-bottom: 30px;
     color: #c1c1c1;
-    text-align: center;
+    font-size: 40px;
+    position: relative;
 }
 
 .title-middle {
