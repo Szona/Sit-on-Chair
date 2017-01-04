@@ -28,6 +28,9 @@ $main-color: #24ba9f;
     height: 225px;
     background-image: url('./../images/box1_img.jpg');
     border: 1px solid #dbdbdb;
+    
+}
+.chair-name {
     position: relative;
 }
 
@@ -36,10 +39,13 @@ $main-color: #24ba9f;
     height: 225px;
     background-image: url('./../images/box2_img.jpg');
     border: 1px solid #dbdbdb;
-    position: relative;
+    
 }
 
-.img1::before {
+.chair-name-2 {
+    position: relative;
+}
+.chair-name::before {
     content: "";
     color: #fff;
     background-color: rgba(255, 255, 255, 0.5);
@@ -49,7 +55,7 @@ $main-color: #24ba9f;
     bottom: 10%;
 }
 
-.img1::after {
+.chair-name::after {
     content: "Chair CLAIR";
     width: 50%;
     border-bottom: 6px solid $main-color;
@@ -58,7 +64,7 @@ $main-color: #24ba9f;
     margin-left: 10px;
 }
 
-.img2::before {
+.chair-name-2::before {
     content: "";
     color: #fff;
     background-color: rgba(255, 255, 255, 0.5);
@@ -68,7 +74,7 @@ $main-color: #24ba9f;
     bottom: 10%;
 }
 
-.img2::after {
+.chair-name-2::after {
     content: "Chair MARGARITA";
     width: 50%;
     border-bottom: 6px solid $main-color;
