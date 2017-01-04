@@ -19,13 +19,33 @@ span {
     color: $main-color;
     font-weight: 600;
 }
+.slider ul{
+    list-style: none;
+}
+
+.slider li{
+    display: none;
+}
+
+.slider .visible{
+    display: inline-block;
+}
 
 .black-chair {
     background: url('./../images/black_chair.png');
     width: 470px;
     height: 337px;
 }
-
+.orange {
+    background: url('./../images/orange.png');
+    width: 470px;
+    height: 337px;
+}
+.red {
+    background: url('./../images/red.png');
+    width: 470px;
+    height: 337px;
+}
 .center-header-content {
     width: 480px;
     height: 250px;

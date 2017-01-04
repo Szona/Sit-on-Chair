@@ -53,7 +53,65 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     hideChairName();
     
+    function slider() {
+        
+        
+  var next = document.querySelector(".right");
+  var prev = document.querySelector(".left");
+  var images = document.querySelectorAll(".slider li");
+  var imageCount = 0;
+    
+    console.log(next);
+    console.log(prev);
+    console.log(images);
+    console.log(imageCount);
+    
+    images[imageCount].classList.add('visible');
+    
+
+    next.addEventListener("click", function(event){
+        
+        console.log("click");
+        
+        images[imageCount].classList.remove('visible');
+        
+        imageCount = imageCount + 1;
+        
+        images[imageCount].classList.add('visible');
+        
+        if (imageCount === images.length -1) {
+            
+            imageCount = imageCount + 1;
+        }
+         
+       
+        
+        
+    })
     
     
+
+    prev.addEventListener("click", function(event){
+        
+        console.log("click");
+        
+        images[imageCount].classList.remove('visible');
+        
+       
+        
+        imageCount = imageCount - 1;
+        
+        images[imageCount].classList.add('visible');
+        
+        if (imageCount == 0) {
+            
+           
+        }
+        
+
+
+    });
+    }
     
+    slider();
 });
