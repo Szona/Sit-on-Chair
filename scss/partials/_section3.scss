@@ -12,6 +12,10 @@
     }
 }
 
+input:focus, textarea:focus {
+    outline: none;
+}
+
 form {
     position: relative;
     .name {
