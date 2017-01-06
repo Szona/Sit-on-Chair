@@ -4,29 +4,40 @@ document.addEventListener("DOMContentLoaded", function(){
     
     function dropDownMenu() {
         
-        var menu = document.querySelector(".dropdown");
+      var menu = document.querySelectorAll(".center> ul >li");
+    
+   for (var i = 0; i < menu.length; i++) {
         
+        menu[i].addEventListener("mouseover", function(event){
+           
+           var dropDown = this.querySelector("ul");
             
-        menu.addEventListener("mouseover", function mouseOver(event){
-            var menuContent = document.querySelector(".dropdown-content"); 
-            menuContent.style.display="block";
+            if (dropDown != null) {
+                
+                 dropDown.style.display= "block";
+                }
+                
+            });
+
+        
+        menu[i].addEventListener("mouseout", function(event){
             
-        });
-        
-        menu.addEventListener("mouseleave", function mouseOver(event){
-            var menuContent = document.querySelector(".dropdown-content"); 
-            menuContent.style.display="none";
+            var dropDown = this.querySelector("ul");
             
-        });
-        
-        
+            if (dropDown != null) {
+                
+                 dropDown.style.display= "none";
+                }
+                
+            });        
+         }
     }
     dropDownMenu();
     
     function hideChairName() {
         
         var img1 = document.querySelector(".img1");
-        console.log(img1);
+        
         
         img1.addEventListener("mouseover", function mouseOver(event){
             img1.classList.remove("chair-name");
@@ -39,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function(){
         });
         
         var img2 = document.querySelector(".img2");
-        console.log(img2);
+    
         
         img2.addEventListener("mouseover", function mouseOver(event){
             img2.classList.remove("chair-name-2");
@@ -75,19 +86,15 @@ document.addEventListener("DOMContentLoaded", function(){
         
         images[imageCount].classList.remove('visible');
         
-        imageCount = imageCount + 1;
+        imageCount ++;
+        
+        if (imageCount >= images.length) {
+            imageCount = 0;
+        }
         
         images[imageCount].classList.add('visible');
         
-        if (imageCount === images.length -1) {
-            
-            imageCount = imageCount + 1;
-        }
-         
-       
-        
-        
-    })
+        });
     
     
 
@@ -97,20 +104,16 @@ document.addEventListener("DOMContentLoaded", function(){
         
         images[imageCount].classList.remove('visible');
         
-       
+        imageCount --;
         
-        imageCount = imageCount - 1;
+        if (imageCount < 0) {
+            imageCount = images.length - 1;
+        }
         
         images[imageCount].classList.add('visible');
         
-        if (imageCount == 0) {
-            
-           
-        }
         
-
-
-    });
+        });
     }
     
     slider();
