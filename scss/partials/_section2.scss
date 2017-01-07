@@ -1,11 +1,12 @@
 $main-color: #24ba9f;
 h2 {
     border-bottom: 8px solid $main-color;
-    width: 300px;
+    width: 380px;
     text-transform: uppercase;
     margin-bottom: 50px;
     margin-left: 3.5%;
     font-weight: 400;
+    padding-bottom: 10px;
 }
 
 .section-2 {
@@ -19,6 +20,7 @@ h2 {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .container {
@@ -81,7 +83,6 @@ h2 {
     margin-bottom: 30px;
     color: #c1c1c1;
     position: relative;
-    
     div {
         position: absolute;
         top: 20%;
@@ -89,36 +90,35 @@ h2 {
     }
 }
 
-
 .index {
     color: #c1c1c1;
     font-size: 12px;
     font-weight: 600;
     position: absolute;
-        top: 100%;
+    top: 100%;
     left: 7%
 }
-
-
-
 
 .change {
     position: absolute;
     top: 6%;
     left: 99%;
 }
+
 .odd {
     background-color: #e4e4e4;
     color: #8e8e8e;
     text-align: center;
     padding: 10px;
 }
+
 .even {
     background-color: #f1f1f1;
     color: #959595;
     text-align: center;
     padding: 10px;
 }
+
 .btn-cennik {
     background-color: $main-color;
     color: #fff;
@@ -130,9 +130,11 @@ h2 {
     bottom: 5%;
     cursor: pointer;
 }
+
 .btn-cennik:focus {
     outline: none;
 }
+
 .btn-cennik-middle {
     background-color: #fff;
     color: $main-color;
@@ -144,9 +146,11 @@ h2 {
     bottom: 5%;
     cursor: pointer;
 }
+
 .btn-cennik-middle:focus {
     outline: none;
 }
+
 .container-middle {
     border: 1px solid $main-color;
     width: 300px;
@@ -156,6 +160,7 @@ h2 {
     background-color: $main-color;
     //    margin: 40px;
 }
+
 .circle-middle {
     border: 1px solid $main-color;
     border-radius: 100%;
@@ -170,6 +175,7 @@ h2 {
     right: 42%;
     z-index: 1;
 }
+
 .circle-middle::before {
     content: "";
     border-radius: 100%;
@@ -179,6 +185,7 @@ h2 {
     position: absolute;
     z-index: 1;
 }
+
 .price-middle {
     border: 1px solid #fff;
     width: 100px;
@@ -206,6 +213,7 @@ h2 {
         color: $main-color;
     }
 }
+
 .title-middle {
     margin: 40px;
     color: #fff;
