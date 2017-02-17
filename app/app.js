@@ -192,9 +192,15 @@ document.addEventListener("DOMContentLoaded", function() {
                     }
 
 
-                    if (transportCheckBox.type == "checked") {
-                      transportSelected.innerText = "transport";
-                    }
+                    transportCheckBox.addEventListener('change', function(event) {
+                      if (transportCheckBox.checked) {
+                        transportSelected.innerText = "Transport";
+                        transportValue.innerText = this.dataset.transportPrice;
+                      } else {
+                        transportSelected.innerText = '';
+                        transportValue.innerText = '';
+                      }
+                    });
 
 
 
@@ -213,4 +219,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     select();
 
+    
 });
