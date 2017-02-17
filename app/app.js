@@ -131,17 +131,39 @@ document.addEventListener("DOMContentLoaded", function() {
         var chairValue = document.querySelector(".panel_right h4");
         console.log(chairValue);
 
-        // var selectedColor = document.querySelector(".color");
-        // console.log(selectedColor);
-        //
-        // var chairValue = document.querySelector(".panel_right .color");
-        // console.log(chairValue);
+        var selectedColor = document.querySelector(".color");
+        console.log(selectedColor);
+
+        var colorValue = document.querySelector(".panel_right .color");
+        console.log(chairValue);
+
+        var selectedPattern = document.querySelector(".pattern");
+        console.log(selectedColor);
+
+        var patternValue = document.querySelector(".panel_right .pattern");
+        console.log(chairValue);
+
+        var transportCheckBox = document.querySelector("#transport");
+        console.log(transport);
+
+        var transportSelected = document.querySelector(".transport");
+        console.log(transportSelected);
+
+        var transportValue = document.querySelector(".panel_right .transport");
+
+
 
         for (var i = 0; i < subMenu.length; i++) {
 
             subMenu[i].addEventListener("click", function onclick (event){
 
-                this.nextElementSibling.style.display="block";
+
+
+                if (this.nextElementSibling.style.display == "block") {
+                  this.nextElementSibling.style.display="none";
+                } else {
+                  this.nextElementSibling.style.display="block";
+                }
 
             });
 
@@ -151,11 +173,31 @@ document.addEventListener("DOMContentLoaded", function() {
                   options[j].addEventListener("click", function onclick (event){
                     this.parentNode.style.display="none";
 
-                    selectedChair.innerText = "Chair " + this.innerText;
+                    if ( this.dataset.id === selectedChair.dataset.id && chairValue.dataset.id === this.dataset.id && chairValue.dataset.id === selectedChair.dataset.id) {
 
-                    chairValue.innerText = this.dataset.price;
+                      selectedChair.innerText = "Chair " + this.innerText;
+                      chairValue.innerText = this.dataset.price;
+                    }
 
-                    // selectedColor.innerText = "Color " + this.innerText;
+                    if ( this.dataset.id === selectedColor.dataset.id && colorValue.dataset.id === this.dataset.id && colorValue.dataset.id === selectedColor.dataset.id) {
+
+                        selectedColor.innerText = this.innerText;
+                        colorValue.innerText = this.dataset.price;
+                    }
+
+                    if ( this.dataset.id === selectedPattern.dataset.id && patternValue.dataset.id === this.dataset.id && patternValue.dataset.id === selectedPattern.dataset.id) {
+
+                      selectedPattern.innerText = this.innerText;
+                      patternValue.innerText = this.dataset.price;
+                    }
+
+
+                    if (transportCheckBox.type == "checked") {
+                      transportSelected.innerText = "transport";
+                    }
+
+
+
 
 
                   });
