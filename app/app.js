@@ -1,7 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
-    
-   //console.log('działam'); 
-    
+document.addEventListener("DOMContentLoaded", function(){    
     function dropDownMenu() {
         
       var menu = document.querySelectorAll(".center> ul >li");
@@ -72,17 +69,17 @@ document.addEventListener("DOMContentLoaded", function(){
   var images = document.querySelectorAll(".slider li");
   var imageCount = 0;
     
-    console.log(next);
-    console.log(prev);
-    console.log(images);
-    console.log(imageCount);
+    //console.log(next);
+    //console.log(prev);
+    //console.log(images);
+    //console.log(imageCount);
     
     images[imageCount].classList.add('visible');
     
 
     next.addEventListener("click", function(event){
         
-        console.log("click");
+        //console.log("click");
         
         images[imageCount].classList.remove('visible');
         
@@ -100,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     prev.addEventListener("click", function(event){
         
-        console.log("click");
+        //console.log("click");
         
         images[imageCount].classList.remove('visible');
         
@@ -117,4 +114,39 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     
     slider();
+    
+    function selectPlan() {
+        
+        
+        
+        
+        
+    }
+    selectPlan();
+    
+    function select() {
+     
+        var subMenu = document.querySelectorAll(".list_arrow");
+        console.log(subMenu);
+        
+        for (var i = 0; i < subMenu.length; i++) {
+            
+            subMenu[i].addEventListener("click", function onclick (event){
+                
+                this.nextElementSibling.style.display="block";
+                
+            });
+            
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+    }
+    select();
+    
 });
