@@ -80,6 +80,16 @@ document.addEventListener("DOMContentLoaded", function() {
       var transportCheckBox = document.querySelector("#transport");
       var transportSelected = document.querySelector(".transport");
       var transportValue = document.querySelector(".panel_right .transport");
+      var cost = document.querySelectorAll(".value");
+      var sumOutPut = document.querySelector(".sum");
+
+      function summary () {
+        sum = 0;
+        for (var i = 0; i < cost.length; i++) {
+          sum += cots[i];
+        }
+        sumOutPut.innerText = sum;
+      }
 
       for (var i = 0; i < subMenu.length; i++) {
         subMenu[i].addEventListener("click", function onclick (event){
@@ -95,23 +105,28 @@ document.addEventListener("DOMContentLoaded", function() {
               if ( this.dataset.id === selectedChair.dataset.id && chairValue.dataset.id === this.dataset.id && chairValue.dataset.id === selectedChair.dataset.id) {
                 selectedChair.innerText = "Chair " + this.innerText;
                 chairValue.innerText = this.dataset.price;
+                // summary();
                 }
               if ( this.dataset.id === selectedColor.dataset.id && colorValue.dataset.id === this.dataset.id && colorValue.dataset.id === selectedColor.dataset.id) {
                 selectedColor.innerText = this.innerText;
                 colorValue.innerText = this.dataset.price;
+                // summary();
                 }
               if ( this.dataset.id === selectedPattern.dataset.id && patternValue.dataset.id === this.dataset.id && patternValue.dataset.id === selectedPattern.dataset.id) {
                 selectedPattern.innerText = this.innerText;
                 patternValue.innerText = this.dataset.price;
+                // summary();
                 }
 
                 transportCheckBox.addEventListener('change', function(event) {
                   if (transportCheckBox.checked) {
                     transportSelected.innerText = "Transport";
                     transportValue.innerText = this.dataset.transportPrice;
+                    // summary();
                   } else {
                     transportSelected.innerText = '';
                     transportValue.innerText = '';
+                    // summary();
                   }
                 });
               });
